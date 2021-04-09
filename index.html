@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./images/icon_64_2.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farzad Golghasemi</title>
+  <script src="js/p5.min.js"></script>
+  <meta name="description" content="Personal website of Farzad Golghasemi who is studying/practicing digital media, architectural and algorithmic design.">
+  <meta name="keywords" content="digital, design, research, creativity, digital media, media design, architectural design, algorithmic design, generative design, data-driven design, 3d modeling, computer graphics, grasshopper3d, processign, p5 js, hci, installations, pavilions, user experience design, prototyping, ui, ux, user interface, web development, design projects, generative tools, design project, farzadgo, farzadesign">
+  <meta name="author" content="Farzad Golghasemi">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="fixed-top">
+      <div>
+        <a href="#">
+          <div id="brand"></div>
+        </a>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarMenu" class="collapse navbar-collapse">
+
+          <ul id="nav-list" class="navbar-nav mx-auto">
+
+            <li class="nav-item dropdown">
+              <a onclick="projFunction()" class="dropbtn nav-link">filter works</a>
+              <div id="proj-dropdown" class="dropdown-content">
+                <a href="#projects" class="categ" onclick="filterSelection('all')">All Works</a>
+                <a href="#projects" class="categ" onclick="filterSelection('comps')">Competition Entries</a>
+                <a href="#projects" class="categ" onclick="filterSelection('barch')">Bachelor Projects</a>
+                <a href="#projects" class="categ" onclick="filterSelection('small')">Small Scale Designs</a>
+                <a href="#projects" class="categ" onclick="filterSelection('exps')">Reseach . Experiment</a>
+                <a href="#projects" class="categ" onclick="filterSelection('book')">Booklet Designs</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">about me</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="container buddy">
+    <div class="hidden">
+      <h1>Farzad Golghasemi — Projects</h1>
+    </div>
+
+    <div class="row jum-row">
+      <div class="col-12 jum-col">
+
+        <h1>Farzad Golghasemi</h1>
+        <div id="line"></div>
+        <h2>design • digital</h2>
+        <a href="#projects"><span></span></a>
+
+        <div class="jum-image">
+          <img src="./works/CDR/images/cdr_01.jpg" alt="">
+        </div>
+        <div class="jum-image">
+          <img src="./works/CSW/images/csw_01.jpg" alt="">
+        </div>
+        <div class="jum-image">
+          <img src="./works/ATR/images/atr_01.jpg" alt="">
+        </div>
+        <div class="jum-image">
+          <img src="./works/DDS/images/dds_00.jpg" alt="">
+        </div>
+        <div class="jum-image">
+          <img src="./works/FNC/images/fnc_06.jpg" alt="">
+        </div>
+
+
+          <div id="mydots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+
+        <div id="for-progress-bar">
+          <div id="progress-bar"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="projects" class="row">
+      <div class="col-6 col-lg-4 clmn small">
+        <a href="./works/ATR">
+          <div class="tile">
+            <img src="./images/atr_thumb.jpg" alt="">
+            <h3><span class="b1">Attracted</span><span class="b2"><br>Grid</span><span class="b3"><br><br>Installation</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch small">
+        <a href="./works/ATS">
+          <div class="tile">
+            <img src="./images/ats_thumb.jpg" alt="">
+            <h3><span class="b1">Ankara</span><span class="b2"><br>Taxi</span><span class="b3"><br><br>Stations</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/BRC">
+          <div class="tile">
+            <img src="./images/brc_thumb.jpg" alt="">
+            <h3><span class="b1">Bentderesi</span><span class="b2"><br>Research</span><span class="b3"><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/CAL">
+          <div class="tile">
+            <img src="./images/cal_thumb.jpg" alt="">
+            <h3><span class="b1">Center for</span><span class="b2"><br>Active</span><span class="b3"><br><br>Living</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn exps">
+        <a href="./works/CDR">
+          <div class="tile">
+            <img src="./images/cdr_thumb.jpg" alt="">
+            <h3><span class="b1">CoDeReL</span><span class="b2"><br>METU</span><span class="b3"><br><br>2017</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/CSC">
+          <div class="tile">
+            <img src="./images/csc_thumb.jpg" alt="">
+            <h3><span class="b1">Caycuma</span><span class="b2"><br>Science</span><span class="b3"><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/CSW">
+          <div class="tile">
+            <img src="./images/csw_thumb.jpg" alt="">
+            <h3><span class="b1">Caycuma</span><span class="b2"><br>Swimming</span><span class="b3"><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch small">
+        <a href="./works/DDS">
+          <div class="tile">
+            <img src="./images/dds_thumb.jpg" alt="">
+            <h3><span class="b1">DDS</span><span class="b2"><br>METU</span><span class="b3"><br><br>2012</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/FNC">
+          <div class="tile">
+            <img src="./images/fnc_thumb.jpg" alt="">
+            <h3><span class="b1">Fethiye</span><span class="b2"><br>Nursing</span><span class="b3"><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn small exps">
+        <a href="./works/GHF">
+          <div class="tile">
+            <img src="./images/ghf_thumb.jpg" alt="">
+            <h3><span class="b1">Algorithmic</span><span class="b2"><br>Modeling &</span><span class="b2"><br><br>Fabrication</span></span><span class="b3"><br><br><br>Examples</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/HMR">
+          <div class="tile">
+            <img src="./images/hmr_thumb.jpg" alt="">
+            <h3><span class="b1">Hekatomnos</span><span class="b2"><br>Mausoleum</span><span class="b3"><br><br>Roof</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/HYB">
+          <div class="tile">
+            <img src="./images/hyb_thumb.jpg" alt="">
+            <h3><span class="b1">Atakule</span><span class="b2"><br>High-rise</span><span class="b3"><br><br>Hybrid</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn book">
+        <a href="https://issuu.com/farzadesign/docs/mim322_-_16_17_-_booklet" target="_blank">
+          <div class="tile">
+            <img src="./images/mim_thumb.jpg" alt="">
+            <h3><span class="b1">Mim322</span><span class="b2"><br>Studio</span><span class="b3 external-link"><br><br>Booklet</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/NCC">
+          <div class="tile">
+            <img src="./images/ncc_thumb.jpg" alt="">
+            <h3><span class="b1">N.hood</span><span class="b2"><br>Community</span><span class="b3"><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn book">
+        <a href="https://issuu.com/farzadesign/docs/perpan_katalog_en" target="_blank">
+          <div class="tile">
+            <img src="./images/per_thumb.jpg" alt="">
+            <h3><span class="b1">Perpan</span><span class="b2"><br>Catalog</span><span class="b3 external-link"><br><br>2015</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn book">
+        <a href="https://issuu.com/farzadesign/docs/farzad_portfolio_2018" target="_blank">
+          <div class="tile">
+            <img src="./images/por_thumb.jpg" alt="">
+            <h3><span class="b1">Portfolio</span><span class="b2"><br>of Works</span><span class="b3 external-link"><br><br>2018</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn exps">
+        <a href="./works/PUD">
+          <div class="tile">
+            <img src="./images/pud_thumb.jpg" alt="">
+            <h3><span class="b1">Parametric</span><span class="b2"><br>Urban</span><span class="b3"><br><br>Design</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/TMX">
+          <div class="tile">
+            <img src="./images/tmx_thumb.jpg" alt="">
+            <h3><span class="b1">Turan</span><span class="b2"><br>Mixed-use</span><span class="b3"><br><br>Complex</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/TMB">
+          <div class="tile">
+            <img src="./images/tmb_thumb.jpg" alt="">
+            <h3><span class="b1">Tekirdag</span><span class="b2"><br>Municipal</span><span class="b3"><br><br>Building</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn book">
+        <a href="https://issuu.com/farzadesign/docs/uet_catalogue_2018_test" target="_blank">
+          <div class="tile">
+            <img src="./images/uet_thumb.jpg" alt="">
+            <h3><span class="b1">UET</span><span class="b2"><br>Catalog</span><span class="b3 external-link"><br><br>2018</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn barch">
+        <a href="./works/UNB">
+          <div class="tile">
+            <img src="./images/unb_thumb.jpg" alt="">
+            <h3><span class="b1">UN</span><span class="b2"><br>Buffer Zone</span><span class="b3"><br><br>Transform.</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/YES">
+          <div class="tile">
+            <img src="./images/yes_thumb.jpg" alt="">
+            <h3><span class="b1">Yeni Erbaa</span><span class="b2"><br>Social</span><span class="b3"><br><br>Habitat</span></h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4 clmn comps">
+        <a href="./works/YTN">
+          <div class="tile">
+            <img src="./images/ytn_thumb.jpg" alt="">
+            <h3><span class="b1">Ytong</span><span class="b2"><br>N.hood</span><span class="b2"><br><br>Community</span><span class="b3"><br><br><br>Center</span></h3>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-7">
+          <div><p>&copy; 2018 Farzad Golghasemi <br>All Rights Reserved</p></div>
+        </div>
+
+        <div class="col-5 icons">
+          <div class="icon"><a href="https://de.linkedin.com/in/farzadesign/de" target="_blank">
+            <img src="images/logo_linkedin_fw.svg" width="40" height="40" class="d-inline-block align-top" alt="lnkd"></a>
+          </div>
+          <div class="icon"><a href="https://www.instagram.com/farzad.go/" target="_blank">
+            <img src="images/logo_instagram_fw.svg" width="40" height="40" class="d-inline-block align-top" alt="inst"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
