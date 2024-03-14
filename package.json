@@ -2,7 +2,7 @@
   "name": "v1",
   "version": "1.0.0",
   "description": "Personal Website V1",
-  "author": "Farzad Golghasemi <farzadesign@gmail.com>",
+  "author": "farzadgo",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
