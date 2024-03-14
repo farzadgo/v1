@@ -313,8 +313,6 @@ span.b3 {
 }
 .tile {
   position: relative;
-  background-position: center;
-  background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
 }
 .tile h3 {
   margin: 0;
